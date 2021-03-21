@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: #{$base-space * 4} 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.navbar-brand > span {
+    color: map-get($map: $colors, $key: yellow);
+}
+
+.navbar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin-left: #{$base-space * 2};
+    font-size: 1.1rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-style: normal;
+    color: map-get($map: $colors, $key: black);
+}
