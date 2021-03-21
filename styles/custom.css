@@ -1,0 +1,16 @@
+html {
+    font-family: 'atkinson_hyperlegible';
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
