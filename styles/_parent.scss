@@ -1,17 +1,18 @@
 html {
     font-family: 'atkinson_hyperlegible';
+    background-color: map-get($map: $colors, $key: white);
 }
 
-*, *::before, *::after {
+* {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    min-width: 100%;
-    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    // overflow: hidden;
 }
 
 #canvas {
@@ -20,4 +21,8 @@ body {
     top: 0;
     left: 0;
     z-index: -50;
+}
+
+.navbar-space {
+    padding-top: $navbar-space;
 }

@@ -1,10 +1,12 @@
 /* COLORS */
+/*  BREAKPOINTS */
 /* SIZING */
 html {
   font-family: 'atkinson_hyperlegible';
+  background-color: #F5F5F5;
 }
 
-*, *::before, *::after {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -12,9 +14,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-  min-width: 100%;
-  overflow: hidden;
+  height: 100vh;
+  width: 100%;
 }
 
 #canvas {
@@ -23,6 +24,10 @@ body {
   top: 0;
   left: 0;
   z-index: -50;
+}
+
+.navbar-space {
+  padding-top: 94px;
 }
 
 .navbar {
@@ -36,6 +41,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 32px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar-brand {
@@ -63,5 +72,71 @@ body {
   text-decoration: none;
   font-style: normal;
   color: #0E0E0E;
+}
+
+.container {
+  width: 90vw;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.hero-section {
+  min-height: 500px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-container-text {
+  position: absolute;
+  z-index: 5;
+}
+
+.title {
+  font-size: 23vw;
+  margin: 0;
+}
+
+.title span {
+  color: #F5F5F5;
+  -webkit-text-stroke: 1.3px #0E0E0E;
+}
+
+.subtitle {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: -1rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 10rem;
+  }
+}
+
+.laptop {
+  width: 100%;
+  max-width: 500px;
 }
 /*# sourceMappingURL=main.css.map */

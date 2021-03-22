@@ -1,2 +1,5 @@
-/* breakpoints */
-$xs: 550px;
+.container {
+    width: 90vw;
+    max-width: map-get($map: $breakpoints, $key: lg);
+    margin: 0 auto;
+}

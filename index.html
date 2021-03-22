@@ -8,30 +8,49 @@
     <link href="fonts/atkinson_hyperlegible/stylesheet.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
 </head>
-<body>
+<body id="my-scrollbar">
     <!-- background -->
     <canvas id="canvas"></canvas>
-    <!-- navigation bar-->
-    <div class="navbar">
-        <div class="navbar-brand">ralf<span>.</span></div>
-        <nav class="navbar-nav">
-            <ul>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="#">Home</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="#">Skills</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="#">Projects</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container">
+        <!-- navigation bar-->
+        <div class="navbar container">
+            <div class="navbar-brand">ralf<span>.</span></div>
+            <nav class="navbar-nav">
+                <ul>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">Skills</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">Projects</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- hero -->
+        <section class="hero-section ">
+            <div class="title-container">
+                <div class="title-container-text">
+                    <h1 class="title"><span>this.</span>ralf</h1>
+                    <p class="subtitle">I make websites</p>
+                </div>
+                <img src="/assets/laptop.svg" alt="laptop" class="laptop">
+            </div>
+        </section>
     </div>
     <!-- scripts -->
     <script src="js/background.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.1/smooth-scrollbar.js" integrity="sha512-3Csz15JaSnj/L3/crtY2nJ0SJusskVc+wjv6qqC31RKV+JRLnV0kXZhodM+pkOKT71UZjJauQjSJuErMsrro+g==" crossorigin="anonymous"></script>
+
+<script>
+  const Scrollbar = window.Scrollbar;
+
+  Scrollbar.init(document.querySelector('#my-scrollbar'));
+</script>
 </body>
 </html>

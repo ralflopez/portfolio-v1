@@ -8,6 +8,17 @@ $colors: (
     purple: #C69DF9,  
 );
 
+/*  BREAKPOINTS */
+$breakpoints: (
+    xs: 576px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
 /* SIZING */
 $base-space: 8px;
 $gutter-bottom: 20px;
+$navbar-space: 94px;

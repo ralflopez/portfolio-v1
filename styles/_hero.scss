@@ -1,0 +1,51 @@
+.hero-section {
+    min-height: 500px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: gold;
+}
+
+.title-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: tomato;
+}
+
+.title-container-text {
+    position: absolute;
+    z-index: 5;
+}
+
+.title {
+    font-size: 23vw;
+    // background-color: hotpink;
+    margin: 0;
+    span {
+        color: map-get($map: $colors, $key: white);
+        -webkit-text-stroke: 1.3px map-get($map: $colors, $key: black);
+    }
+}
+
+.subtitle {
+    // background-color: crimson;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: -1rem;
+}
+
+@media(min-width: map-get($map: $breakpoints, $key: md)) {
+    .title {
+        font-size: 10rem;
+    }
+}
+
+.laptop {
+    width: 100%;
+    max-width: 500px;
+    // border: 3px solid blue;
+}
