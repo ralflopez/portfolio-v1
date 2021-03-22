@@ -1,0 +1,7 @@
+.btn {
+    padding: #{$base-space * 2} #{$base-space * 3};
+    border: 2px solid map-get($map: $colors, $key: black);
+    border-radius: 0.2rem;
+    display: inline-block;
+    background-color: map-get($map: $colors, $key: white);
+}

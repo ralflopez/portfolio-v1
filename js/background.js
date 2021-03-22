@@ -8,7 +8,7 @@ canvas.height = window.innerHeight;
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-});
+}, false);
 
 // circle
 class Circle {
@@ -57,7 +57,7 @@ class BubblesCanvas {
 }
 
 // declare background
-const bubble_bg = new BubblesCanvas(25);
+const bubble_bg = new BubblesCanvas(30);
 
 // auto run animate function
 (function animate() {

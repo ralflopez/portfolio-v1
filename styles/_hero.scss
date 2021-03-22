@@ -49,3 +49,14 @@
     max-width: 500px;
     // border: 3px solid blue;
 }
+
+.cv-section {
+    text-align: center;
+    padding-bottom: #{$base-space * 5};
+
+    .btn {
+        width: 100%;
+        max-width: 500px;
+        padding: #{$base-space * 3} #{$base-space * 5};
+    }
+}

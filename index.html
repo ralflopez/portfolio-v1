@@ -8,9 +8,11 @@
     <link href="fonts/atkinson_hyperlegible/stylesheet.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
 </head>
-<body id="my-scrollbar">
+<body id="my-scrollba">
     <!-- background -->
     <canvas id="canvas"></canvas>
+    <!-- cursor -->
+    <div id="cursor"></div>
     <div class="container">
         <!-- navigation bar-->
         <div class="navbar container">
@@ -42,15 +44,20 @@
                 <img src="/assets/laptop.svg" alt="laptop" class="laptop">
             </div>
         </section>
+        <section class="cv-section">
+            <div class="btn lg">Download CV</div>
+        </section>
     </div>
+
+
     <!-- scripts -->
     <script src="js/background.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.1/smooth-scrollbar.js" integrity="sha512-3Csz15JaSnj/L3/crtY2nJ0SJusskVc+wjv6qqC31RKV+JRLnV0kXZhodM+pkOKT71UZjJauQjSJuErMsrro+g==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.6.1/smooth-scrollbar.js" integrity="sha512-3Csz15JaSnj/L3/crtY2nJ0SJusskVc+wjv6qqC31RKV+JRLnV0kXZhodM+pkOKT71UZjJauQjSJuErMsrro+g==" crossorigin="anonymous"></script>
+    <script>
+    const Scrollbar = window.Scrollbar;
 
-<script>
-  const Scrollbar = window.Scrollbar;
-
-  Scrollbar.init(document.querySelector('#my-scrollbar'));
-</script>
+    Scrollbar.init(document.querySelector('#my-scrollbar'));
+    </script> -->
+    <script src="js/cursor.js"></script>
 </body>
 </html>
